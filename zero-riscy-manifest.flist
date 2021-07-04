@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// Copyright 2020 OpenHW Group
+//
+// Licensed under the Solderpad Hardware Licence, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://solderpad.org/licenses/
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+///////////////////////////////////////////////////////////////////////////////
+//
+// Manifest for the zero-riscy RTL model.
+//   - Intended to be used by both synthesis and simulation.
+//   - Relevent synthesis and simulation scripts/Makefiles must set the shell
+//     ENV variable DESIGN_RTL_DIR as required.
+//
+///////////////////////////////////////////////////////////////////////////////
++incdir+${DESIGN_RTL_DIR}/include
++incdir+${DESIGN_RTL_DIR}/ci
+
+${DESIGN_RTL_DIR}/include/zeroriscy_config.sv
+${DESIGN_RTL_DIR}/include/zeroriscy_defines.sv
+${DESIGN_RTL_DIR}/include/zeroriscy_tracer_defines.sv
+${DESIGN_RTL_DIR}/zeroriscy_alu.sv
+${DESIGN_RTL_DIR}/zeroriscy_compressed_decoder.sv
+${DESIGN_RTL_DIR}/zeroriscy_controller.sv
+${DESIGN_RTL_DIR}/zeroriscy_core.sv
+${DESIGN_RTL_DIR}/zeroriscy_cs_registers.sv
+${DESIGN_RTL_DIR}/zeroriscy_debug_unit.sv
+${DESIGN_RTL_DIR}/zeroriscy_decoder.sv
+${DESIGN_RTL_DIR}/zeroriscy_ex_block.sv
+${DESIGN_RTL_DIR}/zeroriscy_fetch_fifo.sv
+${DESIGN_RTL_DIR}/zeroriscy_id_stage.sv
+${DESIGN_RTL_DIR}/zeroriscy_if_stage.sv
+${DESIGN_RTL_DIR}/zeroriscy_int_controller.sv
+${DESIGN_RTL_DIR}/zeroriscy_load_store_unit.sv
+${DESIGN_RTL_DIR}/zeroriscy_multdiv_fast.sv
+${DESIGN_RTL_DIR}/zeroriscy_multdiv_slow.sv
+${DESIGN_RTL_DIR}/zeroriscy_prefetch_buffer.sv
+${DESIGN_RTL_DIR}/zeroriscy_register_file.sv
+${DESIGN_RTL_DIR}/zeroriscy_register_file_ff.sv
+${DESIGN_RTL_DIR}/zeroriscy_tracer.sv
+
